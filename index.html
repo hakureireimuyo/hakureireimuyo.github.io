@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <style>
+        /* 背景图片随时间轮播样式 */
+        *{
+            margin:0;
+            padding:0;
+        }
+        .blackground
+        {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            border: 0px solid rgb(255, 255, 255);
+            float:left;
+        }
+        .blackground bk
+        {
+            width: auto;
+            height: 100%;
+            
+        }
+        .blackground box1{
+            float:left;
+        }
+        .blackground li{
+            color: aliceblue;
+            float:left;
+
+        }
+        .one
+        {
+            
+            width: 100%;
+            
+            background-color: rgb(44, 44, 44);
+            color: aliceblue;
+            border: 5px solid rgb(0, 0, 0);
+            padding: 10px;
+            float:left;
+        }
+        .one h1{
+            margin: auto;
+            float:left;
+        }
+        .one h2{
+            float:left;
+        }
+        .one img{
+            width: 50px;
+            height: 50px;
+            float:left;
+        }
+        .tow{
+            width: auto;
+            border-top:10px red;
+            height: 400px;
+        }
+        .login
+        {
+            border: 5px solid rgba(255, 255, 255, 0.436);
+            color: aliceblue;
+            float:left
+        }
+        .main
+        {
+            width: auto;
+            height: auto;
+            border: 10 solid rgba(192, 192, 192, 0.324);
+            background-color: rgba(0, 0, 0, 0.326);
+            color: aliceblue;
+            float:right;
+        }
+        a{
+            color:aliceblue;
+        }
+        .text
+        {
+            width: 73%;
+            height: auto;
+            border: 7px solid rgba(220, 220, 220, 0.637);
+            background-color: rgba(240, 248, 255, 0.089);
+            float:right
+            
+        }
+        .text h6{
+            font-size: 15px;
+            text-indent: 2em;
+            float:left
+        }
+        .text img{
+            float:left
+        }
+        .text h1{
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.342);
+        }
+        .text1
+        {
+            background-color: rgba(0, 0, 0, 0.342);
+            width: auto;
+            height: auto;
+            color: aliceblue;
+            float:left;
+            padding: 10px;
+            border: 10px black;
+        }
+  
+         .text2
+        {
+            color: aliceblue;
+            float:left
+        }
+        .down
+        {
+            background-color: rgb(0, 0, 0);
+            color: rgb(41, 41, 181);
+            width: 100%;
+            height: 100px;
+            border: 10px solid black;
+            float:left;
+        }
+        .logo1
+        {
+            position: relative;
+            left: 50%;
+            top: 50%;
+         
+        }
+    </style>
+</head>
+<body  background="./img/bk/10.jpg" >
+
+    <div class="one">
+        <!-- 标头 -->
+        <img src="logo.png" alt="1">
+        <h1>旅游网页设计 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <h2>目的地 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <h2>旅游推荐 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <h2>无障碍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+    </div>
+
+    <div class="tow">
+        <hr align="left">
+    </div>
+    <div class="blackground">
+        <hr>
+        <div class="login">
+          昵&nbsp;&nbsp;&nbsp;&nbsp;称&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="user" id="1" class="in1"><br>
+          密&nbsp;&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;&nbsp;&nbsp;:<input type="password" name="userName1"id=""><br>
+          确认密码&nbsp;:<input type="password" name="userName2"id=""><br>
+          手&nbsp;机&nbsp;号&nbsp;&nbsp;&nbsp;:<input type="number" name="userPhone" id=""><br>
+          <input type="submit"value="点击提交">
+          <a href="" >没有账号？注册一个吧</a>
+          <div id="datetime">
+            <script>
+                setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+            </script>
+        </div>
+        </div>
+        <div class="main"> 
+            <h2>旅游景点推荐</h2>
+            <div class="eassy">
+                <ul>
+                    <li><a href="https://zhuanlan.zhihu.com/p/122905960" target="_blank">天空之境</a></li>
+                    <hr>
+                    <li><a href="https://www.australia.cn/zh-cn/places/cairns-and-surrounds/guide-to-the-great-barrier-reef.html" target="_blank">澳大利亚大堡礁</a></li>
+                    <hr>
+                    <li><a href="https://cn.tripadvisor.com/Tourism-g34530-Palm_Beach_Florida-Vacations.html" target="_blank">美国棕榈海滩</a></li>
+                    <hr>
+                    <li><a href="https://baike.baidu.com/item/%e5%a5%bd%e6%9c%9b%e8%a7%92/30930" target="_blank">好望角</a></li>
+                    <hr>
+                    <li><a href="https://baike.baidu.com/item/%E6%8B%89%E6%96%AF%E7%BB%B4%E5%8A%A0%E6%96%AF/212726" target="_blank">拉斯维加斯</a></li>
+                    <hr>
+                    <li><a href="https://opera.org.au/welcome/zh-hans/" target="_blank">悉尼歌剧院（澳大利亚）</a></li>
+                    <hr>
+                    <li><a href="https://baike.baidu.com/item/%E6%B3%B0%E5%A7%AC%E9%99%B5/541223" target="_blank">泰姬陵（印度）</a></li>
+                    <hr>
+                    <li><a href="https://baike.baidu.com/item/%E5%8A%A0%E6%8B%BF%E5%A4%A7%E8%90%BD%E5%9F%BA%E5%B1%B1%E8%84%89/7041195" target="_blank">洛基山（加拿大）</a></li>
+                    <hr>
+                    <li><a href="https://www.sohu.com/a/410203625_120770965" target="_blank">洪都拉斯</a></li>
+                    <hr>
+                    <li><a href="https://zhuanlan.zhihu.com/p/47616027" target="_blank">纳米比亚</a></li>
+                    <hr>
+                    <li><a href="https://www.mafengwo.cn/poi/6590704.html" target="_blank">塞舌尔群岛的北岛</a></li>
+                    <hr>
+                    <li><a href="https://zhuanlan.zhihu.com/p/23267346" target="_blank">斯里兰卡</a></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+        <div class="text">
+            <div><h1>旅游景点速览</h1></div>
+            <div class="text1">
+                <h3>Rainbow Mountains，Peru，彩虹山，秘鲁</h3>
+                    <img  class="img1" src="img/3_1.jpg" alt="1"width="100%" height="100%" >
+                    <img  class="img1" src="img/3_2.jpg" alt="1" width="290" height="290">
+                    <img  class="img1" src="img/3_3.jpg" alt="1" width="290" height="290">
+                    <img  class="img1" src="img/3_4.jpg" alt="1" width="290" height="290">
+                    <img  class="img1" src="img/3_5.jpg" alt="1" width="290" height="290">
+                    <div class="text2">
+                        <h6 >藏身在秘鲁，安第斯山脉中的彩虹山(Vinicunca)，距离库斯科城(Cusco)约130公里。这儿是由许多山脉连接起来，共同组成的奇妙风景区。
+                    　　彩虹山海拔约5300米，大巴车会开到4500米的地方，之后游客们将会开始一场痛苦的跋涉。因为这里的高原反应，会使得徒步和攀登变得步步维艰。
+                    　　但在最终到达山顶时：遥望广阔的安第斯山脉，延绵不绝的延伸到远处，仿佛置身于油画里，五彩斑斓的山色，会使任何人都觉得不虚此行。
+                    　　彩虹山的奇特现象，其实是由矿物质和地质环境影响而形成的。红色是氧化铁，黄色则可能是硫化铁，而这样许多不同的色彩层层堆叠，就创造出这个星球上少有的奇特地貌。
+                        </h6>
+                    </div>
+            </div>
+            <div class="text1">
+                <h3>Pamukkale Thermal Pools，Turkey 棉花堡温泉池，土耳其</h3>
+                <img  class="img1" src="img/4_1.jpg" alt="1"width="100%" height="100%">
+                <img  class="img1" src="img/4_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/4_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/4_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/4_5.jpg" alt="1" width="290" height="290">
+                <h6 >　真人秀节目《花样姐姐》取景地;温泉度假胜地;土耳其人心中的「世界第八大奇迹」。棉花堡温泉池，它的美丽与盛名早已传到了世界各地。
+                    　　棉堡其实是由碳酸钙，钙化而形成的独特自然景观;它是一座位于土耳其，登尼资里市北部的遗迹，闻名于天然雪白的棉花状梯田和仙境般的反光的温泉池。
+                    　　温泉池水深不一，常年温度保持在 36-38 摄氏度。据科学鉴定，泉水富含钙、镁等矿物质;对风湿、皮肤病、消化不良等有神奇疗效。
+                    　　去游玩时，建议带一双棉袜防滑，因为景区内不准穿鞋;也建议带一副墨镜，因为池内反光非常厉害。</h6>
+            </div>
+            <div class="text1">
+                <h3>Chocolate Hills，Philippines
+                    巧克力山，菲律宾</h3>
+                <img  class="img1" src="img/5_1.jpg" alt="1"width="100%" height="100%">
+                <img  class="img1" src="img/5_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/5_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/5_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/5_5.jpg" alt="1" width="290" height="290">
+                <h6 >　巧克力山是菲律宾保和岛中部，卡门附近一处自然奇景。由1268个圆锥形小山丘组成，高度介于 40到120公尺之间。
+                    　　每到夏季，这些「干草堆」都会干枯，转为褐色，犹如一排排的巧克力排放在地上，故称为「巧克力山」。
+                    　　巧克力山都由石灰岩组成：有些呈圆顶，其他呈锥形。它们上面覆盖着乱草，在雨季时色彩呈彩绿。在旱季里，炎热的太阳将这些草晒干，变为褐色。
+                    　　巧克力山的植被极其神奇，在它们周围的山上长满了树和其他植物，只有巧克力山只长草不长树，更称不上有林;这种自然现象颇为惊人。
+                    　　经过许多年的开发， 其中两座山头已发展为度假胜地，各种设施已完备
+                     </h6>
+            </div>
+            <div class="text1">
+                <h3>Salar de Uyuni，Bolivia
+                    乌尤尼盐沼，玻利维亚</h3>
+                <img  class="img1" src="img/6_1.jpg" alt="1" width="100%" height="100%">
+                <img  class="img1" src="img/6_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/6_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/6_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/6_5.jpg" alt="1" width="290" height="290">
+                <h6 >　　乌尤尼盐沼，这个没有人不知道的「天空之境」，位于玻利维亚西南部的乌尤尼小镇附近，是世界最大的盐沼，盛产岩盐与石膏。
+                    　　它位于海拔约3700米的山区，虽然一望无际的白色世界吸引了全球各地许多游客的造访，但如果没有向导陪同而冒然深入的话，仍然会有相当高的危险性。
+                    　　如果你看多了白日「天空之境」的唯美画面，那么夜晚的乌尤尼，则会震撼到你的灵魂。广阔无垠，毫无障碍物的盐沼面，反射出夜空中梦幻丰富的星系，仿佛置身于银河的中心。
+                    　　乌尤尼最美的时刻，是每年的雨季。因为要有水才会有反光，但水多了也不见得好看。总之，来看盐沼真的需要运气。
+                    　　照片中唯美震撼的景色，不一定在现实中碰到，一般建议，在2月底3月初到达，最为适合。
+                     </h6>
+            </div>
+            <div class="text1">
+                <h3>Giant's Causeway，Northern Ireland
+                    巨人堤道，北爱尔兰</h3>
+                <img  class="img1" src="img/7_1.jpg" alt="1"width="100%" height="100%">
+                <img  class="img1" src="img/7_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/7_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/7_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/7_5.jpg" alt="1" width="290" height="290">
+                <h6 >　　巨人堤道(Giant's Causeway)位于北爱尔兰贝尔法斯特西北约 80公里处大西洋海岸。由总计约 4万根六角形石柱组成 8公里的海岸。石柱连绵有序，呈阶梯状延伸入海。
+                    　　巨人堤道被认为是古新世时火山喷发后熔岩冷却凝固而形成的。巨人堤道及堤道海岸，1986年被列为「世界自然遗产」。
+                    　　走在约五千万年前，火山喷发结晶形成的六边形石块上，会有一种无法言表的穿越感。喜欢远古时代感的旅行者们，千万不要错过。
+                    
+                     </h6>
+            </div>
+            <div class="text1">
+                <h3>Skeleton Coast，Namibia
+                    骷髅海岸纳米比亚</h3>
+                <img  class="img1" src="img/8_1.jpg" alt="1" width="100%" height="100%">
+                <img  class="img1" src="img/8_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/8_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/8_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/8_5.jpg" alt="1" width="290" height="290">
+                <h6 >　　　在非洲纳米比亚，纳米布沙漠和大西洋冷水域之间，有一片近乎白色的沙漠，葡萄牙海员把这条绵延的海岸线称为「骷髅海岸」。
+                    　　从空中俯瞰，骷髅海岸是一大片褶痕斑驳的金色沙丘，这是从大西洋向东北延伸到内陆的沙砾平原。
+                        1933年，一名瑞士飞行员从开普敦飞往伦敦时，飞机失事，坠落在这个海岸附近。有人说他的骸骨终有一天会在「骷髅海岸」找到，骷髅海岸从此得名。可是诺尔的遗体一直没有发现。
+                    　　骷髅海岸沿线充满危险，有交错的水流、8级大风、令人毛骨悚然的雾海和深海里参差不齐的暗礁。来往船只经常失事，因此，海岸布满了各种沉船残骸和船员遗骨。
+                    　　但除去这些听起来毛骨悚然的信息，当地沙漠与海面交错的景观，也是不可多得的奇景。
+                     </h6>
+            </div>
+            <div class="text1">
+                <h3>Darvaza Gas Crater，Turkmenistan
+                    '地狱'之门，土库曼斯坦</h3>
+                <img  class="img1" src="img/9_1.jpg" alt="1" width="100%" height="100%">
+                <img  class="img1" src="img/9_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/9_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/9_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/9_5.jpg" alt="1" width="290" height="290">
+                <h6 >地狱之门(又称：达瓦札天然气燃烧坑 Darvaza gas crater)是土库曼斯坦达瓦札的一处天然气田，其地面于1971年崩塌，形成天然气坑。
+                    　　地质学家为免甲烷气扩散而将气坑点火，自此该处一直连续燃烧。该气坑直径为69米，深度为30米。
+                    　　气坑的总面积相等于一个美式足球场的大小，从远处观看，真的很像一处燃烧的入口，被人们称为「地狱之门」。
+                    　　该气坑是一处受欢迎的旅游景点，过去五年共有五万名游客到访。气坑附近同时是野生沙漠露营的胜地。
+                     </h6>
+            </div>
+            <div class="text1">
+                <h3>The Grand Prismatic Spring，U.S.A.
+                    大棱镜温泉，美国</h3>
+                <img  class="img1" src="img/10_1.jpg" alt="1" width="100%" height="100%">
+                <img  class="img1" src="img/10_2.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/10_3.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/10_4.jpg" alt="1" width="290" height="290">
+                <img  class="img1" src="img/10_5.jpg" alt="1" width="290" height="290">
+                <h6 >大棱镜温泉(The Grand Prismatic Spring)，又称大虹彩温泉，位于美国黄石国家公园内，直径约100米，是美国最大，世界第三大的温泉。
+                    　　它宽约75至91米，49米深，水温高达85℃，每分钟约会涌出 2000升泉水。最早于1839年为探险家所发现。
+                    　　它也是黄石公园里最有名的间歇泉之一。大棱镜温泉的美在于湖面的颜色随季节而改变，春季湖面呈灿烂的橙红色;夏季，呈现红色或黄色;到了冬季，水体则呈现深绿色。
+                    　　这是由于，含矿物质湖水内的藻类和含色素的细菌等微生物，体内色素比例会随季节变换而改变，于是水体也就呈现出不同的色彩。
+                     </h6>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="down">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">联系我们</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">更多业务</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">广告位招租</a>
+        </p>
+        
+    </div>
+<!-- index.html -->
+
+
+</body>
+</html>
